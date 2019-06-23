@@ -1,0 +1,47 @@
+<div id="uncssblk">
+<div class="row">
+	<div class="col-lg-12">
+		<form id="uncss-form" enctype="multipart/form-data">
+    <div class="row">
+      <div class="col-lg-6">
+        <label for="inputHtml">Your HTML</label>
+        <textarea placeholder="Insert your HTML here" rows="20" name="inputHtml" id="inputHtml" ng-model="inputHtml"></textarea>
+      </div>
+      <div class="col-lg-6">
+        <label for="inputCss">Your CSS</label>
+        <textarea placeholder="Insert your CSS here" rows="20" name="inputCss" id="inputCss" ng-model="inputCss"></textarea>
+      </div>
+    </div>
+    
+    <div class="row"  >
+    <div class="column text-center">
+      <button class="button button-large" ng-click="uncssfun()" type="submit">UnCSS my styles!</button>
+    </div>
+  </div>
+  	
+  </form>
+
+	</div>
+   </div>
+   </div>
+
+<div class="container">
+   <div id="copy_clipbord">
+       <div  class="row">
+      	<div class="col-lg-12">
+          	
+       	<label for="outputCss">Your shortened CSS!</label>
+        <textarea placeholder="Take your shortened CSS and use it!" rows="20" name="outputCss" id="outputCss" ng-model="outputCss" readonly></textarea>
+    
+          </div>
+      </div>
+      <div class="row">
+      <div class="column text-center">
+        <button class="button js-clipboard" data-clipboard-action="copy" copy-to-clip-board fortextarea="outputCss" data-clipboard-target="#outputCss">Copy to clipboard</button>
+        <p id="js-clipboard-message" hidden="">
+
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>

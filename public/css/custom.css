@@ -1,0 +1,135 @@
+
+#mainNav .navbar-nav>li.nav-item {    cursor: pointer;}
+#main_continer { padding: 0;}
+.main_page_container { margin: 50px 0;    min-height: 500px;}
+#uncssblk{ padding: 15px;}
+#uncssblk .row .column, #copy_clipbord .row .column {
+    display: block;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin-left: 0;
+    max-width: 100%;
+    width: 100%;
+}
+#uncssblk label, legend, #copy_clipbord label, legend {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+
+
+#uncssblk textarea, #copy_clipbord textarea{
+    min-height: 170px;
+    resize: both;
+    background: #fff;
+	width: 100%;
+    height: max-content;
+    padding: 5px;
+}
+#uncssblk .text-center, #uncssblk .text-center {
+    text-align: center;
+}
+
+
+.button-large {
+    font-size: 1.2rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    padding: 0 2rem;
+    -webkit-transition: height .3s;
+    transition: height .3s;
+}
+.button, button, dd, dt, li {
+    margin-bottom: 1rem;
+}
+.button, button, input[type=button], input[type=reset], input[type=submit] {
+    background-color: #2e2e2e;
+    border: .1rem solid #2e2e2e;
+    border-radius: .4rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    height: 3.2rem;
+    letter-spacing: .1rem;
+    line-height: 3.2rem;
+    padding: 0 3rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-top: 20px;
+}
+
+.button:focus, .button:hover, button:focus, button:hover, input[type=button]:focus, input[type=button]:hover, input[type=reset]:focus, input[type=reset]:hover, input[type=submit]:focus, input[type=submit]:hover {
+    background-color: #606c76;
+    border-color: #606c76;
+    color: #fff;
+    outline: 0;
+}
+
+#idetail_page .row form {width: 100%;}
+
+#idetail_page .row input.choosefile {  padding: 10px; border: 1px solid #dcdcdc;  border-radius: 4px;  margin-right: 20px;  }
+#idetail_page .row p, #cleanedcss_block .row p:nth-child(3){ color: red;}
+#weburl_page .row span{color: red;}
+
+
+#weburl_page .row .field {    margin: 10px 0;}
+#weburl_page input[type=submit] {  margin-top: 0;  height: 2.8rem;  line-height: 2.2rem;}
+#weburl_page .row p.error {color: red;     margin-left: 24%;}
+#weburl_page .row li { margin: 5px 0;}
+.internal_blk {    padding: 10px;  border: 1px solid #dcdcdc; border-radius: 4px; margin-bottom: 30px;}
+
+
+#cleanedcss_block{    background: #f6f6f6; padding: 30px;}
+#cleanedcss_block textarea{ min-height: 170px;  resize: both;  background: #fff;  width: 100%;  height: max-content;  padding: 5px;}
+#cleanedcss_block .row .column{  display: block; -webkit-box-flex: 1;  -ms-flex: 1 1 auto;  flex: 1 1 auto;  margin-left: 0;
+    max-width: 100%;  width: 100%;}
+
+#cleanedcss_block .row p { margin: 0;}
+#cleanedcss_block label { float: right;}
+#cleanedcss_block h3 { color: #18bc9c;}
+
+#cleanedcss_block .button  {    height: 2.8rem;   line-height: 2.8rem;    padding: 0 2rem;}
+
+
+.assists_block .assists_container {border: 1px solid #dcdcdc;     padding: 0;}
+.assists_block h3 {margin: 20px 0;}
+.assists_block ol{  width: 100%;    display: inline-block;    padding: 0;    margin: 0;}
+.assists_block ol li{margin:3px 12px 0 30px; width: 76%;  display: list-item;     float: left;}
+.assists_block button { padding: 0 20px;  float: right; cursor: pointer;}
+.assists_block ol div.assists_ulli { background-color: #fff;  padding: 10px 0 15px;     border-bottom: 1px solid #d2d2d2;}
+.assists_block ol div.assists_ulli:nth-child(odd) {  background-color: #f5f5f5;}
+.assists_block .button, .assists_block button {    height: 0;   line-height: 1.5rem;    padding:0; }
+.assists_block button:focus, .assists_block .button:focus { border: none;    outline: none;    text-decoration: none;}
+.remove_block{display: inline-block;  width: 14%; }
+.remove_block span{   display: inline-block;  padding: 0 5px; cursor: pointer;}
+
+
+
+#myModal p { font-size: 20px;}
+#myModal button:nth-child(1) {background: none; }
+
+#myModal button {    height: 2.2rem; background-color:red; border:none;  padding: 0 2rem;  border-radius: .1rem;     outline: none; }
+#myModal button{box-shadow: none;}
+
+
+
+div#preloader {      
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #fff url(http://files.mimoymima.com/images/loading.gif) no-repeat center center;
+    z-index: 1031;
+    opacity: 0.8;}
+

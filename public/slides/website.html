@@ -1,0 +1,164 @@
+<div id="weburl_page">
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+		<div class="field" id="form_field_url">
+		<span>*</span><strong>Website URL:</strong>&nbsp;
+		<input type="text" class="text" size="35" id="f_url" value="http://atopia-dev.indegene.com/" ng-model="webURL" name="url">
+		<p class="error" style="display:none">Please add your URL</p>
+		</div>
+		</div>
+		<div class="col-md-6">
+		<input type="submit" value="submit" ng-click="webistefun()">
+		</div>
+	</div>
+</div>	
+
+
+<div class="container" ng-show="websiteContent">
+	
+	<div class="internal_blk">
+		<div class="row">
+		<div class="col-md-12">		
+			<h3>Internal Page URL's</h3>
+			<ol>
+				<li ng-repeat="ipage in internalpage track by $index">{{ipage}}</li>
+			</ol>
+		</div>
+		</div>
+	</div>
+
+	<div class="internal_blk">
+		<div class="row">
+		<div class="col-md-12">		
+			<h3>External URL's</h3>
+			<ol>
+				<li ng-repeat="epage in externalpage">{{epage}}</li>
+			</ol>
+		</div>
+		</div>
+	</div>
+	
+	
+
+	<div class="internal_blk">
+		<div class="row">
+		<div class="col-md-12">		
+			<h3>All Js Links</h3>
+			<ol>
+				<li ng-repeat="jslinks in jsfilepage">{{jslinks}}</li>
+			</ol>
+		</div>
+		</div>
+	</div>
+
+
+
+<div id="cleanedcss_block" class="container-fluid">
+	<div class="container">
+
+		<div class="row">
+					<h3>Cleaned CSS</h3>		
+		</div>
+		
+		<hr>
+		
+		<!-- css start-->
+		<div class="cleanedCSSBlock" ng-repeat="cobj in cleanedCSS">
+			<div class="row">
+				<div class="col-md-12">		
+						<p><b>{{($index+1) +". "+cobj.path}} </b></p>
+						<p ng-show="cobj.minify == '' && cobj.error == null">No Document level CSS found or no unused CSS found</p>
+						<p ng-show="cobj.minify == null"><b>Error </b>
+							<br>
+							Reason:-  <span>{{cobj.error.reason}}</span>
+							<br>
+							Line Number:-  <span>{{cobj.error.lineNumber}}</span>
+							<br>
+							Column At:-  <span>{{cobj.error.columnat}}</span>
+						
+						</p>
+				</div>
+			</div>
+			
+			<div <div ng-show="!cobj.minify == '' && cobj.error == null">
+			<label for="outputCss">Your shortened CSS!</label>
+				<textarea ng-show="!cobj.minify == '' && cobj.error == null" rows="4" id={{"csstextid"+$index}} cols="50">{{cobj.minify}}</textarea>
+				<div class="row">
+				  <div class="column text-center">
+					<button class="button js-clipboard" data-clipboard-action="copy" copy-to-clip-board 
+					fortextarea={{"csstextid"+$index}} data-clipboard-target="#outputCss">Copy to clipboard</button>
+				  </div>
+			</div>
+			</div>
+			
+		</div>
+		<!-- css end-->
+
+		
+	 </div>
+	 
+	 
+	 
+	 
+	 
+	 
+	 	<div class="container">
+
+		<div class="row">
+					<h3>Document Level Cleaned CSS</h3>		
+		</div>
+		
+		<hr>
+		
+		<!-- Document level css start-->
+	<div class="cleanedCSSBlock" ng-repeat="dcobj in cleanedDOCCSS">
+		<div class="row">
+			<div class="col-md-12">		
+					<p><b>{{($index+1) +". "+dcobj.path}} </b></p>
+					<p ng-show="dcobj.minify == '' && dcobj.error == null">No Document level CSS found or no unused CSS found</p>
+					<p ng-show="dcobj.minify == null"><b>Error </b>
+						<br>
+						Reason:-  <span>{{dcobj.error.reason}}</span>
+						<br>
+						Line Number:-  <span>{{dcobj.error.lineNumber}}</span>
+						<br>
+						Column At:-  <span>{{dcobj.error.columnat}}</span>
+					
+					</p>
+			</div>
+		</div>
+		
+		<div ng-show="!dcobj.minify == '' && dcobj.error == null">
+			<label for="outputCss">Your shortened CSS!</label>
+				<textarea rows="4" id={{"doccsstextid"+$index}} cols="50">{{dcobj.minify}}</textarea>
+				<div class="row">
+				  <div class="column text-center">
+					<button class="button js-clipboard" data-clipboard-action="copy" copy-to-clip-board 
+					fortextarea={{"doccsstextid"+$index}} data-clipboard-target="#outputCss">Copy to clipboard</button>
+				  </div>
+			</div>
+		</div>
+		
+	</div>
+	<!-- Document level css end-->
+
+		
+	 </div>
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+</div>
+
+
+
+</div>

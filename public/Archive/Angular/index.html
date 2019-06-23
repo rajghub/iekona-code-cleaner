@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="cleanupApp">
+
+<head>
+
+   <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Clean UP</title>
+
+<script src="js/default_plugins/jquery-2.1.1.min.js"></script>
+<script src="js/default_plugins/angular.min.js"></script>
+<script src="js/default_plugins/angular-ui-router.js"></script>
+
+
+ <script type="text/javascript" src="js/app.js"></script>
+
+</head>
+
+<body ng-controller="cssCleanup">
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+
+                    <li ng-class="{'active_menu':subMenu == 'website'}">
+                        <a ng-click="nav('website')">Website</a>
+                    </li>
+                    <li ng-class="{'active_menu':subMenu == 'iDetail-eDetail'}">
+                        <a ng-click="nav('iDetail-eDetail')">i-Detail / e-Detail</a>
+                    </li>
+					<li ng-class="{'active_menu':subMenu == 'GetCleanCSS'}">
+                        <a ng-click="nav('GetCleanCSS')">GetCleanCSS</a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+	<div ui-view> </div>
+
+</body>
+
+
+</html>
