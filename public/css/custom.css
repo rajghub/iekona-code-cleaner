@@ -1,7 +1,7 @@
 
 #mainNav .navbar-nav>li.nav-item {    cursor: pointer;}
 #main_continer { padding: 0;}
-.main_page_container { margin: 50px 0;    min-height: 500px;}
+.main_page_container { margin: 50px 0;    min-height: 600px;}
 #uncssblk{ padding: 15px;}
 #uncssblk .row .column, #copy_clipbord .row .column {
     display: block;
